@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/9.0/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/9.0/tei-epidoc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title> Epitaph für die Pfarrerstochter Anna Elisabeth Corvinus </title>
+			</titleStmt>
+			<publicationStmt>
+				<!-- Normdaten: Organisationen, z.B. Akademie der Wissenschaften -->
+				<authority> Akademie der Wissenschaften und der Literatur - Mainz - Digitale
+					Akademie </authority>
+
+				<!-- Lizenz -->
+				<availability status="free">
+					<licence target="http://creativecommons.org/licenses/by/4.0/">Bereitgestellt
+						unter einer Creative Commons Namensnennung 4.0 International Lizenz (CC BY
+						4.0)</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<!-- idno Hier die übliche DIO Notation einbauen -->
+					<msIdentifier>
+						<placeName>Mainz</placeName>
+						<institution>Akademie der Wissenschaften und Literatur – Arbeitsstelle
+							Deutsche Inschriften</institution>
+						<idno type="URI"
+							>http://nbn-resolving.de/urn:nbn:de:0238-di034mz03k0056100</idno>
+						<altIdentifier>
+							<idno>DI 34, Nr. 561</idno>
+						</altIdentifier>
+					</msIdentifier>
+					<physDesc>
+						<objectDesc>
+							<supportDesc>
+								<support>
+									<!-- Normdaten: Objektyp [AAT]-->
+									<objectType>Grabmal</objectType>
+									<!-- Normdaten: Material -->
+									<material>Kalkstein</material>
+									<dimensions unit="cm">
+										<height>68</height>
+										<width>60</width>
+										<depth>2-2,5</depth>
+									</dimensions>
+								</support>
+							</supportDesc>
+						</objectDesc>
+						<!-- handDesc oder scriptDesc oder typeDesc -->
+						<scriptDesc>
+							<!-- Normdaten: Schriften -->
+							<scriptNote xml:id="Fr">Fraktur</scriptNote>
+							<scriptNote xml:id="Ka">Kapitalis</scriptNote>
+						</scriptDesc>
+						<decoDesc>
+							<!-- Dekoration --> 
+							<decoNote>Rabe (Corvinus), darüber Initialen I M C</decoNote>
+						</decoDesc>
+					</physDesc>
+					<history>
+						<origin>
+							<!-- Normdaten: Zeiten, Regionen, Orte und Ortstypen-->
+							<origDate>
+							<date notBefore="1659-06-02">22. Juno 1659</date>
+							</origDate>
+							<origPlace>
+							<country>Deutschland</country>
+							<region>Rheinlandpfalz</region>
+							<settlement type="city">Hennweiler</settlement>
+							<geogName>
+								<location>
+									<geogName>Ev. Pfarrkirche</geogName>
+								</location>
+							</geogName>
+							</origPlace>
+						</origin>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<revisionDesc>
+			<change>2018-01-22</change>
+		</revisionDesc>
+		<!-- evtl. revisionDesc einbauen -->
+		<encodingDesc>
+			<!-- In dieser Form erst ab EpiDoc Release 8.23 möglich -->
+			<schemaRef url="http://www.stoa.org/epidoc/schema/9.0/tei-epidoc.rng">
+				<desc>EpiDoc: TEI XML for epigraphic Documents Schema</desc>
+			</schemaRef>
+		</encodingDesc>
+		<profileDesc>
+			<particDesc>
+				<listPerson>
+					<person xml:id="Corvinus_Anna" sex="2" age="Kleinkind">
+						<persName>
+							<forename>Anna</forename>
+							<forename> Elisabeth</forename>
+							<surname>Corvinus</surname>
+						</persName>
+						<death when="1659-06-02"/>
+					</person>
+					<!-- GND bzw. link auf Pfarrerverzeichnis -->
+					<person xml:id="Corvinus_Michael" sex="1">
+						<persName>
+							<forename>Johannes</forename>
+							<forename> Michael</forename>
+							<surname>Corvinus</surname>
+						</persName>
+					</person>
+					<person xml:id="Dach_Simon" sex="1">
+						<persName ref="http://d-nb.info/gnd/11852321X"
+								><forename>Simon</forename><surname>Dach</surname></persName>
+						<floruit>Dichter aus der ersten Hälfte des 17. Jahrhunderts </floruit>
+					</person>
+					<listRelation>
+						<relation name="ElternKind" active="#Corvinus_Michael" passive="#Corvinus_Anna"/>
+					</listRelation>
+				</listPerson>
+			</particDesc>
+			<langUsage>
+				<!-- möglicherweise @usage: Sprachgebrauch in % -->
+				<language ident="de">Deutsch</language>
+				<language ident="la">Latein</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<graphic url="img/Abb_WS_di-34_561_01.jpg">
+			<desc>Abbildung</desc>
+			<!-- Hinweis auf Creator / Lizenz -->
+			<!-- evtl. die Bereiche Giebel / Hauptteil als Zonen definieren und über xml:id referenzieren -->
+		</graphic>
+	</facsimile>
+	<text>
+		<body>
+			<div type="edition">
+				<head>Edition</head>
+				<div type="textpart">
+					<head>Giebel</head>
+					<ab>
+						<!-- Normdaten: Zitate evtl. cts für Bibelzitat -->
+						<lb/><cit><ref cRef="Mk 10:14">MARC 10</ref> 
+						<lb/><quote>Lasset die Kindlein Zu mir komen <lb/>Dann solcher ist das
+						Reich Gottes</quote></cit></ab>
+				</div>
+				<div type="textpart">
+					<head>Schriftfeld</head>
+					<ab><lb n="1"/>ANO 1659 den 22 <lb n="2"/>Junÿ ist im Herren <lb n="3"
+						/>eingeschlaffen <persName ref="#Corvinus_Anna"><rs ref="#KA">ANNA
+								ELISABETHA</rs></persName>, des <lb n="4"/>Ehrwüdigen <abbr>v<expan>
+								<ex>nd</ex>
+							</expan>
+						</abbr> wolgelehrten Herr <persName ref="#Corvinus_Michael"
+									><expan><abbr>Johan</abbr><ex>nnis</ex></expan>
+							<lb n="4"/>MICHAELIS CORVINI</persName> Pfarherrs zu Hen<lb n="5"
+							break="no"/>weiller Töchterlein, ihres alters 2 jahr, <lb n="6"/>vnd 5
+						monat <lg type="Kreuzreim" rhyme="ABAB">
+							<l n="7">Du Armes Würmlein hast genug,</l>
+							<l n="8">nach deinem alter außgestanden,</l>
+							<l n="9">eh als dein Seelchen seinen Flug,</l>
+							<l n="10">genomen aus leibes banden,</l>
+						</lg>
+						<lb n="11"/><gap reason="lost" unit="character" quantity="4"/>t nun in dein
+						Seelig leben, <lb n="12"/><gap reason="lost"/>s <gap reason="lost"/>ben, <lb
+							n="13"/><gap reason="lost" unit="line"/>
+					</ab>
+				</div>
+			</div>
+			<div type="commentary">
+				<p>Auffällig ist die Verwendung von Satzzeichen sowie die Hervorhebung der Namen
+					durch Schriftwechsel. Bei den vier kreuzgereimten Versen am Ende der Inschrift
+					könnte es sich um ein zeitgenössisches Lied handeln. Die erwähnten Personen sind
+					ansonsten unbekannt</p>
+				<!-- überprüfen – GND Referenz einarbeiten und in listPerson nennen -->
+				<p>Die vier kreuzgereimten Verse konnten mittlerweile identifiziert werden. Sie
+					stammen von <persName ref="Dach_Simon">Simon Dach</persName>
+				</p>
+			</div>
+			<div type="bibliography">
+				<!-- Dies ist das simpelste Modell für Bibliographien -->
+				<bibl>Kdm. 181.</bibl>
+				<bibl>Ziemer, Hennweiler 83 (teilw.).</bibl>
+			</div>
+		</body>
+	</text>
+</TEI>
