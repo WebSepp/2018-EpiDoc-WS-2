@@ -101,6 +101,7 @@
         <h2>Gliederung</h2>
         <ol class="line-height-one-five">
           <li>Praxisteil</li>
+          <li>Abfrage</li>
           <li>Transformation</li>
           <li>Literatur</li>
         </ol>
@@ -115,13 +116,13 @@
       <div>
         <h1 class="red">Learning by Doing</h1>
         <div class="centered">
-          <blockquote>Übertragen Sie mit Hilfe der EpiDoc Template Datei unter Zuhilfenahme der EpiDoc Guidelines das Fallbeispiel in ein valides EpiDoc: TEI XML Dokument !</blockquote>
+          <blockquote>Übertragen Sie mit Hilfe der EpiDoc-Template-Datei unter Zuhilfenahme der EpiDoc-Guidelines das Fallbeispiel in ein valides EpiDoc-TEI-XML-Dokument!</blockquote>
         </div>
       </div>
     </div>
     <div class="step">
       <div>
-        <h1 class="red">Materialien</h1>
+        <h2 class="red">Materialien</h2>
         <ol class="line-height-one-five">
           <li>EpiDoc-Template <code>ex-epidoctemplate.xml</code> herunterladen Optionen:
             <ul>
@@ -144,21 +145,60 @@
     </div>
     <div class="step">
       <div>
-        <h1 class="red">Musterinschrift</h1>
+        <h2 class="red">Musterinschrift</h2>
         <div>
-          <a href="resources/img/Abb_WS_di-34_561_01.jpg">
-          <img src="resources/img/Abb_WS_di-34_561_01.jpg" style="width:40%; height:40%" /></a>
-          <p class="small">Quelle: <a href="http://www.inschriften.net/di034/0561/">DIO 34, 561</a></p>
+          <a href="http://www.inschriften.net/di034/0561/">
+          <img src="resources/img/dio_screenshot.png" style="width:100%;" /></a>
+          <p class="small">Die Texte  der sowie die Metainformationen über die Inschrift finden Sie unter: <a href="http://www.inschriften.net/di034/0561/">DIO 34, 561</a></p>
         </div>
       </div>
     </div>
     <div class="step">
-      <h1 class="red">Musterlösung</h1>
+      <h2 class="red">Musterlösung</h2>
       <p>Einen Lösungsvorschlag zur EpiDoc TEI konformen Auszeichnung der Musterinschrift finden Sie in der Datei <a href="data/DIO_34_561_20180122.xml"><code>DIO_34_561_20180122.xml</code></a>.</p>
     </div>
 
     <div class="step">
       <h1 class="red">02</h1>
+      <h2 class="line-height-one-five"> Abfrage</h2>
+    </div>
+
+    <div class="step">
+      <h2 class="red">XPath-Abfrage</h2>
+      <ul>
+        <li>
+          XPath fragt <strong>Pfade</strong> und <strong>Achsen</strong> innerhalb eines XML-Baumes ab und gibt gefundene Knoten, Attributwerte und Inhalte zurück.
+        </li>
+        <li>
+          Abfragen:
+          <ul>
+            <li>
+              <strong>Beliebiger Startpunkt</strong> der Suche wird mit <code>//</code> notiert.
+            </li>
+            <li>
+              <strong>Nodes</strong> werden als <code>//node1/node2</code> abgefragt.
+            </li>
+            <li>
+              <strong>Attribute</strong> werden in der Navigation als <code>//node[@Attr="Wert"]</code> abgefragt.
+            </li>
+            <li>
+              <strong>Attribute</strong> werden als Endpunkt <code>//node1/@Attribute</code> abgefragt.
+            </li>
+          </ul>
+
+        </li>
+
+        <li>
+          <strong>Hinweis:</strong> Namespaces sind gegebenenfalls mit anzugeben!
+        </li>
+      </ul>
+      <p>
+        <a href="https://www.freeformatter.com/xpath-tester.html">Hier gehts zu XPath!</a>
+      </p>
+    </div>
+
+    <div class="step">
+      <h1 class="red">03</h1>
       <h2 class="line-height-one-five"> Transformation</h2>
     </div>
 
@@ -177,7 +217,7 @@
     </div>
     <div class="step">
       <div>
-        <h1 class="red">03</h1>
+        <h1 class="red">04</h1>
         <h2 class="line-height-one-five"> Literatur</h2>
       </div>
     </div>
