@@ -136,7 +136,7 @@
 	<text>
 		<body>
 			<div type="edition">
-				<div type="textpart" subtype="pediment">
+				<div type="textpart" subtype="pediment" n="A">
 					<ab>
 						<!-- Normdaten: Zitate evtl. cts für Bibelzitat -->
 						<lb/><cit>
@@ -146,7 +146,7 @@
 								Gottes</quote>
 						</cit></ab>
 				</div>
-				<div type="textpart" subtype="section">
+				<div type="textpart" subtype="section" n="B">
 					<ab><lb n="1"/>ANO 1659 den 22 <lb n="2"/>Junÿ ist im Herren <lb n="3"
 						/>eingeschlaffen <persName ref="#Corvinus_Anna"><rs ref="#KA">ANNA
 								ELISABETHA</rs></persName>, des <lb n="4"/>Ehrwüdigen <abbr>v<expan>
