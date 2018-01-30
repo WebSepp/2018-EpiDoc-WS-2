@@ -11,7 +11,6 @@
 				<!-- Normdaten: Organisationen, z.B. Akademie der Wissenschaften -->
 				<authority> Akademie der Wissenschaften und der Literatur - Mainz - Digitale
 					Akademie </authority>
-
 				<!-- Lizenz -->
 				<availability status="free">
 					<licence target="http://creativecommons.org/licenses/by/4.0/">Bereitgestellt
@@ -55,7 +54,7 @@
 							<scriptNote xml:id="Ka">Kapitalis</scriptNote>
 						</scriptDesc>
 						<decoDesc>
-							<!-- Dekoration --> 
+							<!-- Dekoration -->
 							<decoNote>Rabe (Corvinus), darüber Initialen I M C</decoNote>
 						</decoDesc>
 					</physDesc>
@@ -63,27 +62,23 @@
 						<origin>
 							<!-- Normdaten: Zeiten, Regionen, Orte und Ortstypen-->
 							<origDate>
-							<date notBefore="1659-06-02">22. Juno 1659</date>
+								<date notBefore="1659-06-02">22. Juno 1659</date>
 							</origDate>
 							<origPlace>
-							<country>Deutschland</country>
-							<region>Rheinlandpfalz</region>
-							<settlement type="city">Hennweiler</settlement>
-							<geogName>
-								<location>
-									<geogName>Ev. Pfarrkirche</geogName>
-								</location>
-							</geogName>
+								<country>Deutschland</country>
+								<region>Rheinlandpfalz</region>
+								<settlement type="city">Hennweiler</settlement>
+								<geogName>
+									<location>
+										<geogName>Ev. Pfarrkirche</geogName>
+									</location>
+								</geogName>
 							</origPlace>
 						</origin>
 					</history>
 				</msDesc>
 			</sourceDesc>
 		</fileDesc>
-		<revisionDesc>
-			<change>2018-01-22</change>
-		</revisionDesc>
-		<!-- evtl. revisionDesc einbauen -->
 		<encodingDesc>
 			<!-- In dieser Form erst ab EpiDoc Release 8.23 möglich -->
 			<schemaRef url="http://www.stoa.org/epidoc/schema/9.0/tei-epidoc.rng">
@@ -115,7 +110,8 @@
 						<floruit>Dichter aus der ersten Hälfte des 17. Jahrhunderts </floruit>
 					</person>
 					<listRelation>
-						<relation name="ElternKind" active="#Corvinus_Michael" passive="#Corvinus_Anna"/>
+						<relation name="ElternKind" active="#Corvinus_Michael"
+							passive="#Corvinus_Anna"/>
 					</listRelation>
 				</listPerson>
 			</particDesc>
@@ -125,6 +121,10 @@
 				<language ident="la">Latein</language>
 			</langUsage>
 		</profileDesc>
+		<revisionDesc>
+			<change>2018-01-22</change>
+		</revisionDesc>
+		<!-- evtl. revisionDesc einbauen -->
 	</teiHeader>
 	<facsimile>
 		<graphic url="img/Abb_WS_di-34_561_01.jpg">
@@ -136,17 +136,17 @@
 	<text>
 		<body>
 			<div type="edition">
-				<head>Edition</head>
-				<div type="textpart">
-					<head>Giebel</head>
+				<div type="textpart" subtype="pediment">
 					<ab>
 						<!-- Normdaten: Zitate evtl. cts für Bibelzitat -->
-						<lb/><cit><ref cRef="Mk 10:14">MARC 10</ref> 
-						<lb/><quote>Lasset die Kindlein Zu mir komen <lb/>Dann solcher ist das
-						Reich Gottes</quote></cit></ab>
+						<lb/><cit>
+							<ref cRef="Mk 10:14">MARC 10</ref>
+							<lb/>
+							<quote>Lasset die Kindlein Zu mir komen <lb/>Dann solcher ist das Reich
+								Gottes</quote>
+						</cit></ab>
 				</div>
-				<div type="textpart">
-					<head>Schriftfeld</head>
+				<div type="textpart" subtype="section">
 					<ab><lb n="1"/>ANO 1659 den 22 <lb n="2"/>Junÿ ist im Herren <lb n="3"
 						/>eingeschlaffen <persName ref="#Corvinus_Anna"><rs ref="#KA">ANNA
 								ELISABETHA</rs></persName>, des <lb n="4"/>Ehrwüdigen <abbr>v<expan>
@@ -180,8 +180,10 @@
 			</div>
 			<div type="bibliography">
 				<!-- Dies ist das simpelste Modell für Bibliographien -->
-				<bibl>Kdm. 181.</bibl>
-				<bibl>Ziemer, Hennweiler 83 (teilw.).</bibl>
+				<listBibl>
+					<bibl>Kdm. 181.</bibl>
+					<bibl>Ziemer, Hennweiler 83 (teilw.).</bibl>
+				</listBibl>
 			</div>
 		</body>
 	</text>
