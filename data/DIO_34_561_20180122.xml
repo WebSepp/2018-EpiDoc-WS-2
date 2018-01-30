@@ -127,7 +127,7 @@
 		<!-- evtl. revisionDesc einbauen -->
 	</teiHeader>
 	<facsimile>
-		<graphic url="img/Abb_WS_di-34_561_01.jpg">
+		<graphic url="http://inschriften.net/fileadmin/user_upload/sonstiges/TMP/di-34_561_01.jpg">
 			<desc>Abbildung</desc>
 			<!-- Hinweis auf Creator / Lizenz -->
 			<!-- evtl. die Bereiche Giebel / Hauptteil als Zonen definieren und über xml:id referenzieren -->
